@@ -1,1 +1,11 @@
 R2 : ubuntu password43
+R1 : r1 s(2WD)
+
+
+rosserial
+
+
+AFMotor
+#######
+https://learn.adafruit.com/adafruit-motor-shield/using-dc-motors
+https://learn.adafruit.com/adafruit-motor-shield/af-dcmotor-class
