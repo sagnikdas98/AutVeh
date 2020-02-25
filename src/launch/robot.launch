@@ -1,0 +1,33 @@
+<launch>
+  <rosparam param="rate">10</rosparam>
+
+  <node pkg="control" type="motorControlClass.py" name="lmotorControl" respawn="true">
+      <remap from="motor_cmd" to="lmotor_cmd"/>
+      <rosparam param="GPWM">13</rosparam>
+      <rosparam param="GDIRN">5</rosparam>
+  </node>
+
+  <node pkg="control" type="motorControlClass.py" name="rmotorControl" respawn="true">
+      <remap from="motor_cmd" to="rmotor_cmd"/>
+      <rosparam param="GPWM">12</rosparam>
+      <rosparam param="GDIRN">6</rosparam>
+  </node>
+
+
+  <node pkg="control" type="speedEncoderClass.py" name="lspeedEncoder" respawn="true">
+      <remap from="wheel" to="lwheel"/>
+      <rosparam param="EncAF">27</rosparam>
+      <rosparam param="EncBF">22</rosparam>
+      <rosparam param="EncAR">17</rosparam>
+      <rosparam param="EncBR">18</rosparam>
+  </node>
+
+  <node pkg="control" type="speedEncoderClass.py" name="rspeedEncoder" respawn="true">
+      <remap from="wheel" to="rwheel"/>
+      <rosparam param="EncAF">16</rosparam>
+      <rosparam param="EncBF">26</rosparam>
+      <rosparam param="EncAR">23</rosparam>
+      <rosparam param="EncBR">24</rosparam>
+  </node>
+</launch>
+

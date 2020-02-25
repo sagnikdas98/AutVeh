@@ -1,0 +1,27 @@
+<launch>
+<master auto="start"/>
+<!-- PLATFORM SPECIFIC -->
+<!-- <include file="$(find control)/launch/pilauncher.launch" /> -->
+
+<!-- SENSORS CONFIGURATION -->
+
+    <!-- use only one of the below    -->
+    <!-- <include file="$(find control)/launch/rplidar.launch" /> -->
+    <include file="$(find control)/launch/androidgoal.launch" />
+    <include file="$(find control)/launch/laser_filter.launch" />
+
+<!-- TRANSFORMS -->
+    <include file="$(find control)/launch/transformer.launch" />
+
+<!-- NAVIGATION -->
+
+    <include file="$(find control)/launch/slam.launch" />
+
+    <include file="$(find control)/launch/navigation.launch" />
+
+
+<!-- CAMERA -->
+
+    <include file="$(find control)/launch/camera.launch" />
+
+</launch>

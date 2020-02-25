@@ -1,0 +1,14 @@
+<launch>
+<!-- PLATFORM SPECIFIC -->
+
+  <include file="$(find control)/launch/robot.launch" /> 
+
+  <include file="$(find control)/launch/diff_drive.launch" />
+
+  <include file="$(find control)/launch/razor-pub.launch" /> 
+
+  <include file="$(find control)/launch/ekf_localization.launch" /> 
+
+  <include file="$(find control)/launch/ublox_device.launch" /> 
+
+</launch>

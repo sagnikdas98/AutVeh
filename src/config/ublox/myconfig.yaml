@@ -1,0 +1,3 @@
+debug: 3
+device: /dev/ttyUSB0
+tmode: 0

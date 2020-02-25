@@ -1,0 +1,18 @@
+# ticks_meter: 90833
+# base_width: 0.29
+
+
+# encoder_min: -2147483648
+# encoder_max: 2147483647
+
+# out_min: -100
+# out_max: 100
+
+rate: 10
+
+Kp: 550 #600
+Ki: 30  #20
+Kd: 10 #10
+
+timeout_ticks: 4
+rolling_pts: 3

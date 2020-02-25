@@ -1,0 +1,4 @@
+<launch>
+ <node pkg="control" type="androidtomovebase.py" respawn="true" name="androidgoal" output="screen"/>
+ </launch>
+  

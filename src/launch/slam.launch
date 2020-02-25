@@ -1,0 +1,8 @@
+<launch>
+    <!-- Mapping package -->
+
+
+    <node pkg="gmapping" type="slam_gmapping" respawn="true" name="slam_gmapping" output="screen">
+         <rosparam command="load" file="$(find control)/config/slam/slam.yaml" />
+    </node>
+</launch>
