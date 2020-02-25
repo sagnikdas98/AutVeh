@@ -1,13 +1,11 @@
 # Yonda
 To build a 4 Wheel differential drive robot car.  
 Hardware components :  
-1. Raspberry pi 3B+ 
-2. 5MP Pi camera
-3. OV7670 camera
-4. MPU 6050
-5. Arduino Uno R3 - 2x
-6. L293D Motor Driver Shield for Arduino 
-7. Measuring Sensor Groove Coupler Module For Arduino - 4x
-8. 4 Wheel differential drive chasis 
-9. 5000mAh Power Bank
-10. 3 x 18650 + 3S BMS
+1. Nvidia Jetson
+2. Raspberry pi 4
+3. EPL Focal Camera 
+4. Razor IMU 9DOF
+5. Rp LiDAR A2
+6. Cytron MD13S 13Amp DC Motor Driver
+7. Ublox GPS module
+Demo Video: https://twitter.com/illestofminds_/status/1212145844088004608
